@@ -32,7 +32,6 @@ cells.forEach(function(cell) {
         }
         cell.innerText = currentPlayer;
         ++currentMoves;
-        console.log(currentMoves, possibleMoves);
         checkForWinner(currentPlayer); 
         switchPlayer();
 
