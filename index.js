@@ -47,8 +47,8 @@ function switchPlayer() {
 }
 function checkForWinner(currentPlayer) {
     winningCombinations.forEach(function(combination) {
-        let check = combination.every(idx => cells[idx].innerText.trim() == currentPlayer);
-        if(check){
+        let check = combination.every(index => cells[index].innerText == currentPlayer);
+        if(check) {
             displayWinningMessage();
         } else if(currentMoves == possibleMoves) {
             displayDraw();
