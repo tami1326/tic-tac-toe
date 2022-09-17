@@ -14,9 +14,9 @@ let currentPlayer = [];
 let possibleMoves = 9;
 let currentMoves = 0;
 
-chosePlayer();
+choosePlayer();
 
-function chosePlayer() {
+function choosePlayer() {
     let randomizer = Math.random();
     if (randomizer < 0.5) {
         currentPlayer = "X";
